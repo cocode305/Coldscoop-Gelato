@@ -1,0 +1,13 @@
+/* ====================== HOMEPAGE ===================== */
+@media (max-width: 768px) {
+    .our-details {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens */
+    }
+}
+
+
+/* ======================== ABOUT PAGE ====================== */
+
+/* ======================== BLOG PAGE ====================== */
+
+/* ======================== CONTACT PAGE ====================== */

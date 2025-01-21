@@ -1,0 +1,125 @@
+@import url('../style.css');
+@import url('../mediaqueries.css');
+
+.contact-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/contact-hero.jpg')
+}
+
+.contact-details-box{
+    display: flex;
+    flex-basis: 50%;
+    gap: 4rem;
+    padding: 5rem 2rem;
+    background:  #120d0b;
+    color: #fff;
+}
+.our-contact, .user-contact{
+    width: 50%;
+}
+.getInTouch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gold;
+}
+.getInTouch hr{
+    width: 30px;
+    border-color: gold;
+}
+.contact-heading{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.contact-para{
+    font-size: 17px;
+    line-height: 1.5;
+}
+.our-details{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.our-details li{
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.our-details li::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.our-details li a{
+    color: #fff;
+}
+.address::before{
+    background: url('../images/icons/map.png')
+}
+.phone::before{
+    background: url('../images/icons/telephone.png')
+}
+.email::before{
+    background: url('../images/icons/mail.png')
+}
+.work-hours::before{
+    background: url('../images/icons/clock.png')
+}
+.hr-line{
+    margin-top: 2rem;
+}
+
+.social-links{
+    padding: 2rem 0;
+}
+.social-icons{
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.user-info{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+.name-box, .email-box{
+    flex: 1;
+}
+.user-info input, .subject, textarea{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    background: #11212d;
+}
+::placeholder{
+    color: #ccd0cf;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+textarea{
+    height: 200px;
+    color: #ccd0cf;
+    resize: none;
+}
+label{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}

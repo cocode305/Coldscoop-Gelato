@@ -1,0 +1,450 @@
+ @import url('mediaqueries.css');
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    max-width: 100%;
+    height: 100%;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 100%;
+}
+
+/* ======================= NAVIGATION LINKS ====================== */
+.logo-link{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pink{
+    color: #c74777;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: #120d0b;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.nav-links{
+    color: #fff;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.nav-links:hover{
+    color: #c74777;
+    transform: scale(1.1);
+}
+
+.user-signin a{
+    color: #fff;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.user-signin a:hover{
+    color: #c74777;
+}
+.login-link{
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #c74777;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+.login-link:hover{
+    color: #fff !important;
+}
+
+/* ==================== LOGIN MODAL SECTION =============================== */
+.login-modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.content-box{
+    background: #fefefe;
+    border: 1px solid #888;
+    width: 60%;
+    margin: 15px auto 15%;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.close-btn:hover{
+    background: #eee;
+}
+
+.avatar{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.content-wrapper{
+    padding: 0 12px;
+}
+.uname,.psw{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 9px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.submit-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #00ff55;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    opacity: 0.8;
+}
+.cancel-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12px;
+}
+.cancel-btn{
+    padding: 12px 40px;
+    border: none;
+    color: #fff;
+    background: #f44336;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    opacity: 0.8;
+}
+
+.animate{
+    animation: loginModalZoom 0.7s;
+}
+@keyframes loginModalZoom {
+    from {transform: scale(0)};
+    to {transform: scale(1)};
+}
+/* ========================= HERO TEXT SECTION ========================= */
+.hero-textbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+}
+.hero-heading{
+    font-size: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-btn{
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: 2px solid #c74777;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s ease-in-out
+}
+
+.cta-btn:hover{
+    background-color: #c74777;
+}
+
+/* ===================== PREVIEW CARD SECTION ==================== */
+.offer{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 42px;
+}
+
+.preview-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+
+.cards{
+    width: 20%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 2px 0 5px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.pc-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.breakfast{
+    background-color: #2d383a;
+}
+
+.appetizer{
+    background-color: #342e3a;
+}
+
+.desert{
+    background-color: #392d2d;
+}
+
+.cards h4{
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.cards p{
+    margin-top: .5rem;
+}
+
+.cards a{
+    display: block;
+    margin-top: .5rem;
+    color: #c74777;
+}
+
+.cards a:hover{
+    transform: scale(1.05);
+}
+
+/* ======================= CUSTOMER FEEDBACK SECTION
+* CUSTOMER REVIEW CARD
+* USER PROFILE CARD
+======================================== */
+.feedback{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.feedback-text{
+    background-color: #392d2d;
+    padding: 3rem 5rem;
+    position: relative;
+    width: 50%;
+}
+
+.feedback-para{
+    color: gold;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.dot{
+    font-size: 26px;
+    padding-bottom: .5rem;
+    margin-right: .3rem;
+}
+
+.feedback-heading{
+    color: #fff;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feedback-review{
+    color: #4c4b4d;
+    margin: 1rem 0;
+}
+
+.customer-review{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 35%;
+    left: 80px;
+    width: 1080px;
+}
+
+.review-card{
+    width: 50%;
+    height: 300px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+    box-shadow:0 0 5px 3px #03030377;
+    border-radius: 3px;
+}
+
+.review-heading{
+    color: #e6c303;
+}
+
+.review-text{
+    margin-top: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.user-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.user-name{
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.user-details{
+    color: #4c4b4d;
+}
+
+.feedback-bg{
+    width: 50%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/feedback-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ============================ FOOD GALLERY SECTION ========================= */
+.gallery{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.food-gallery{
+    width: 16.66%;
+}
+
+/* ============================ FOOTER SECTION ========================= */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0 5rem;
+    background-color: #120d0b;
+    color: #fff;
+}
+
+.footer ul h4{
+    color: #fff;
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer li{
+    margin-top: 1rem;
+}
+
+.footer a{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    transition: transform .3s ease-in-out;
+    padding: .5rem 1rem .5rem 0;
+}
+
+.footer a:hover{
+    color: #c74777;
+    transform: scale(1.1);
+}
+
+hr{
+    border-color: #777
+}
+
+.copywrite{
+    background-color: #120d0b;
+    color: #fff;
+    padding: 2rem;
+}
+
+/* =================== MEDIA QUERIES SECTION ========================== */
