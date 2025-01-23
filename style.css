@@ -102,12 +102,13 @@ nav li{
     z-index: 1;
     overflow: auto;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 .content-box{
     background: #fefefe;
     border: 1px solid #888;
-    width: 60%;
-    margin: 15px auto 15%;
+    width: 400px;
 }
 .img-container{
     display: flex;

@@ -89,7 +89,21 @@
     margin-top: 1.5rem;
     margin-right: 2rem;
 }
+.social-icons:hover {
+    transform: scale(1.1);
+}
 
+/* ==================== USER CONTACT ================ */
+.details-heading {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: .5rem;
+}
+.details-para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
 .user-info{
     display: flex;
     gap: 20px;
@@ -98,6 +112,13 @@
 .name-box, .email-box{
     flex: 1;
 }
+label{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
 .user-info input, .subject, textarea{
     display: block;
     width: 100%;
@@ -105,6 +126,11 @@
     outline: none;
     border: none;
     background: #11212d;
+    color: #ccd0cf;
+    font-size: 18px;
+}
+.subject {
+    margin-bottom: 1rem;
 }
 ::placeholder{
     color: #ccd0cf;
@@ -116,10 +142,13 @@ textarea{
     color: #ccd0cf;
     resize: none;
 }
-label{
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+.contactUs-btn {
+    margin-top: 2rem;
+    padding: 12px 20px;
+    cursor: pointer;
+    background: #c74777;
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }

@@ -3,7 +3,7 @@ const loginBtn = document.querySelector('.login-link');
 const closeBtn = document.querySelector('.close-btn');
 
 loginBtn.addEventListener('click', () => {
-    loginModal.style.display = "block";
+    loginModal.style.display = "flex";
 });
 
 closeBtn.addEventListener('click', (e) => {
