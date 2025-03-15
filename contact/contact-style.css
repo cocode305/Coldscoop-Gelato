@@ -1,5 +1,5 @@
 @import url('../style.css');
-@import url('../mediaqueries.css');
+@import url('../responsive.css');
 
 .contact-hero{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/contact-hero.jpg')
@@ -57,7 +57,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translatey(-50%);
+    transform: translate(-50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

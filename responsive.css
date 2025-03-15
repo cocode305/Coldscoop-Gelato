@@ -1,7 +1,11 @@
 /* ====================== HOMEPAGE ===================== */
-@media (max-width: 768px) {
-    .our-details {
-        grid-template-columns: 1fr; /* Stacks items on smaller screens */
+@media screen and (max-width: 1230px) {
+    /* .our-details {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens
+    } */
+     
+    .feedback-heading{
+        font-size: 2rem;
     }
 }
 
