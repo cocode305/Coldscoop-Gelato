@@ -38,6 +38,7 @@ html,body{
     color: #c74777;
 }
 
+/* ============== RESPONSIVE SIDE BAR SECTION STARTS =============== */
 .sidebar{
     display: none;
     flex-direction: column;
@@ -48,13 +49,38 @@ html,body{
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: #fff; */
+    z-index: 1000;
+    background-color: #fff;
     /* background: */
+    padding: 1rem;
+}
+
+.sidebar ul{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0 !important;
 }
 
 .sidebar li{
     display: block;
+    width: 100%;
 }
+
+.sidebar-links{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    color: #000;
+}
+
+.sidebar-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ================ RESPONSIVE SIDE BAR ENDS ========================= */
 
 nav{
     width: 100%;
@@ -64,10 +90,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
 }
 
-nav li{
+.nav-lists{
     display: inline-block;
     margin-left: 2rem;
 }
