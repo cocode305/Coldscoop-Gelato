@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <title>Restaurant Webpage</title>
 </head>
 <body>
@@ -21,37 +22,6 @@
                         <li><a href="#" class="sidebar-links">Menu</a></li>
                         <li><a href="contact/contact.html" class="sidebar-links">Contact</a></li>
                     </ul>
-
-                    <!-- <ul class="user-signin">
-                        <li><button href="#" class="login-link">Log in</button></li>
-                    </ul>
-
-                    <div class="login-modal">
-                        <form action="" class="content-box animate">
-                            <div class="img-container">
-                                <span class="close-btn">&times;</span>
-                                <img src="images/avatar.jpg" alt="Avatar" class="avatar">
-                            </div>
-
-                            <div class="content-wrapper">
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" class="uname" id="uname" placeholder="Enter Username">
-
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" name="" id="psw" class="psw" placeholder="Enter Password">
-
-                                <button type="submit" class="submit-btn"><b>Submit</b></button>
-
-                                <label>
-                                    <input type="checkbox" name="checked" checked> Remember me
-                                </label>
-                            </div>
-
-                            <div class="cancel-box">
-                                <button class="cancel-btn">Cancel</button>
-                                <span class="forgot-psw">Forgot <a href="#" class="psw-reset">password</a></span>
-                            </div>
-                        </form> -->
                     </div>
                 </nav>
 <!-- ======================== SIDE BAR SECTION END ===================== -->
@@ -61,14 +31,14 @@
                         <a href="index.html " class="logo-link"><span class="white">ColdScoop</span> <span class="pink">Gelato</span></a>
                     </h2>
 
-                    <ul>
+                    <ul class="hide-from-navbar">
                         <li class="nav-lists"><a href="about/about.html" class="nav-links">About Us</a></li>
                         <li class="nav-lists"><a href="#" class="nav-links">Blog</a></li>
                         <li class="nav-lists"><a href="#" class="nav-links">Menu</a></li>
                         <li class="nav-lists"><a href="contact/contact.html" class="nav-links">Contact</a></li>
                     </ul>
 
-                    <ul class="user-signin">
+                    <ul class="user-signin hide-from-navbar">
                         <li><button href="#" class="login-link">Log in</button></li>
                     </ul>
 
@@ -146,13 +116,10 @@
                         <p class="feedback-para"><span class="dot">.</span>testimonials</p>
                         <h1 class="feedback-heading">What People Say</h1>
                         <p class="feedback-review">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae tempore explicabo, totam iste ab saepe! A delectus deleniti aliquam sit?</p>
-
-                        
                     </div>
+
                     <div class="feedback-bg">
-                    </div>
-
-                    <div class="customer-review">
+                        <div class="customer-review">
                             <div class="review-card">
                                 <h2 class="review-heading">Love the menu</h2>
                                 <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in sapiente animi aut, rem excepturi.</p>
@@ -163,6 +130,7 @@
                                     <span class="user-details">Manager at Earlyson</span>
                                 </div>
                             </div>
+                            
                             <div class="review-card">
                                 <h2 class="review-heading">Love the menu</h2>
                                 <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores in sapiente animi aut, rem excepturi.</p>
@@ -172,8 +140,10 @@
                                     <span class="user-name">Julia William</span>
                                     <span class="user-details">Manager at Earlyson</span>
                                 </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>

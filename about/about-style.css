@@ -1,4 +1,6 @@
 @import url("../style.css");
+@import url("../media-queries.css");
+
 @font-face {
     font-family: Sacramento;
     src: url(../fonts/Sacramento-Regular.ttf);

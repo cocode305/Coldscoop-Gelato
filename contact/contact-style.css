@@ -1,5 +1,5 @@
 @import url('../style.css');
-@import url('../responsive.css');
+@import url('../media-queries.css');
 
 .contact-hero{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/contact-hero.jpg')

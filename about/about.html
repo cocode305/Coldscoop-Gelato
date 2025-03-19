@@ -9,19 +9,35 @@
 <body>
     <div class="container">
         <header>
+
+            <!-- ==================== Side bar Section ================== -->
+            <nav class="sidebar">
+                <button class="sidebar-btn close-sidebar"><img src="../icons/close.svg" alt=""></button>
+
+            <ul>
+                <li><a href="about/about.html" class="sidebar-links">About Us</a></li>
+                <li><a href="#" class="sidebar-links">Blog</a></li>
+                <li><a href="#" class="sidebar-links">Menu</a></li>
+                <li><a href="../contact/contact.html" class="sidebar-links">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+<!-- ======================== SIDE BAR SECTION END ===================== -->
+
+
             <nav>
                 <h2 class="logo-box">
                     <a href="../index.html" class="logo-link"><span class="white">ColdScoop</span> <span class="pink">Gelato</span></a>
                 </h2>
 
-                <ul>
-                    <li><a href="about.html" class="nav-links">About Us</a></li>
-                    <li><a href="#" class="nav-links">Blog</a></li>
-                    <li><a href="#" class="nav-links">Menu</a></li>
-                    <li><a href="../contact/contact.html" class="nav-links">Contact</a></li>
+                <ul class="hide-from-navbar">
+                    <li class="nav-lists"><a href="about.html" class="nav-links">About Us</a></li>
+                    <li class="nav-lists"><a href="#" class="nav-links">Blog</a></li>
+                    <li class="nav-lists"><a href="#" class="nav-links">Menu</a></li>
+                    <li class="nav-lists"><a href="../contact/contact.html" class="nav-links">Contact</a></li>
                 </ul>
 
-                <ul class="user-signin">
+                <ul class="user-signin hide-from-navbar">
                     <li><a href="#" class="login-link">Log in</a></li>
                 </ul>
 
@@ -52,6 +68,8 @@
                         </div>
                     </form>
                 </div>
+
+                <button class="sidebar-btn open-sidebar"><img src="../icons/menu.svg" alt=""></button>
             </nav>
 
             <div class="about-hero">

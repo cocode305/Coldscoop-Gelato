@@ -1,3 +1,5 @@
+@import url('media-queries.css');
+ 
  *{
     margin: 0;
     padding: 0;
@@ -50,8 +52,9 @@ html,body{
     top: 0;
     right: 0;
     z-index: 1000;
-    background-color: #fff;
-    /* background: */
+    background-color: #ffffff41;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     padding: 1rem;
 }
 
@@ -70,8 +73,12 @@ html,body{
 .sidebar-links{
     display: block;
     width: 100%;
-    padding: 12px 0;
+    padding: 12px;
     color: #000;
+}
+
+.sidebar-links:hover {
+    background: #f0f0f0;
 }
 
 .sidebar-btn {
@@ -336,14 +343,24 @@ nav{
     width: 100%;
     height: 650px;
     display: flex;
+    flex-direction: row;
     margin-top: 5rem;
 }
 
 .feedback-text{
     background-color: #392d2d;
     padding: 3rem 5rem;
-    position: relative;
     width: 50%;
+    height: 100%;
+}
+
+.feedback-bg{
+    width: 50%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/feedback-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .feedback-para{
@@ -379,7 +396,6 @@ nav{
     top: 35%;
     left: 80px;
     width: 80vw;
-    border: 2px solid #000;
 }
 
 .review-card{
@@ -424,15 +440,6 @@ nav{
 
 .user-details{
     color: #4c4b4d;
-}
-
-.feedback-bg{
-    width: 50%;
-    height: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/feedback-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 /* ============================ FOOD GALLERY SECTION ========================= */
@@ -488,24 +495,4 @@ hr{
     background-color: #120d0b;
     color: #fff;
     padding: 2rem;
-}
-
-/* =================== MEDIA QUERIES SECTION ========================== */
-@media screen and (max-width: 1230px) {
-    /* .our-details {
-        grid-template-columns: 1fr; /* Stacks items on smaller screens
-    /* } */
-     
-    .feedback-heading{
-        font-size: 2.5rem;
-    }
-    .customer-review{
-        left: 80px;
-        width: 1080px;
-        gap: 50px;
-        justify-content: space-between;
-    }
-    .review-card{
-        width: 45%;
-    }
 }

@@ -1,0 +1,100 @@
+@import url('style.css');
+/* ====================== HOMEPAGE ===================== */
+@media screen and (max-width: 1280px) {
+    /* .our-details {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens
+    } */
+     
+    .feedback-heading{
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        color: gold;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        color: violet;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .hide-from-navbar {
+        display: none;
+    }
+
+    /* ======================= WHAT WE OFFER SECTION ==================== */
+    .preview-card {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    /* ================ FEEDBACK (TESTIMONIAL) SECTION ================= */
+    .feedback {
+        flex-direction: column;
+        height: 950px;
+    }
+
+    .feedback-bg {
+        width: 100%;
+        height: 50%;
+        padding: 1rem;
+    }
+
+    .feedback-text {
+        width: 100%;
+        height: 50%;
+    }
+
+    .customer-review {
+        flex-direction: column;
+        top: 25%;
+        z-index: 1000;
+        width: 550px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .footer ul {
+        margin-bottom: 2rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer a {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        color: red;
+    }
+}
+
+/* ======================== ABOUT PAGE ====================== */
+
+/* ======================== BLOG PAGE ====================== */
+
+/* ======================== CONTACT PAGE ====================== */
