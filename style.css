@@ -87,6 +87,10 @@ html,body{
     cursor: pointer;
 }
 
+.open-sidebar {
+    display: none;
+}
+
 /* ================ RESPONSIVE SIDE BAR ENDS ========================= */
 
 nav{
