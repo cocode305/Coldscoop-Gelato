@@ -48,11 +48,11 @@
 
     /* ====================== HERO TEXT SECTION ======================= */
     .hero-textbox {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
 
     .hero-heading {
-        font-size: 3rem;
+        font-size: 2rem;
         width: 300px;
     }
 
@@ -96,7 +96,7 @@
         top: 25%;
         left: 8%;
         z-index: 1000;
-        width: 350px;
+        width: 280px;
         gap: 20px;
     }
 
@@ -192,7 +192,7 @@
     }
 
     .customer-review {
-        width: 300px;
+        width: 250px;
     }
 }
 
