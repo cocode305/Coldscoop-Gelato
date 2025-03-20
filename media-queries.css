@@ -22,6 +22,14 @@
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+    }
+
+    .about-hero {
+        min-height: calc(50vh - 80px);
+    }
+
     .logo-link {
         font-size: 14px;
     }
@@ -86,7 +94,7 @@
     .customer-review {
         flex-direction: column;
         top: 25%;
-        left: 27%;
+        left: 8%;
         z-index: 1000;
         width: 350px;
         gap: 20px;
@@ -95,6 +103,10 @@
     .review-card {
         width: 100%;
         padding: 1rem;
+    }
+
+    .gallery {
+        display: none;
     }
 
 /* ============================ FOOTER SECTION ========================== */
@@ -111,6 +123,61 @@
 
     .footer a {
         text-align: left;
+    }
+
+
+/* ========================= ABOUT US PAGE ============================= */
+    .about-us__facts {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .fact-cards {
+        width: 100%;
+    }
+
+    .facts-heading {
+        font-size: 14px;
+    }
+
+    .our-story {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .our-story__text {
+        width: 100%;
+    }
+
+    .our-story__img {
+        width: 100%;
+    }
+
+/* =========================== CONTACT US PAGE =========================== */
+    .contact-details-box {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .our-contact, .user-contact{
+        width: 100%;
+    }
+
+    .our-details {
+        grid-template-columns: 1fr;
+    }
+
+    .our-details li::before {
+        top: 20%;
+        transform: translate(-20%);
+    }
+
+    .user-info {
+        flex-direction: column;
+    }
+
+    .reserve-heading {
+        text-align: center;
     }
 }
 
